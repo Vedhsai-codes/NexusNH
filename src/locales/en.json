@@ -1,0 +1,160 @@
+{
+  "welcome": "Welcome to NexusNH",
+  "subtitle": "This app is anonymous and doesn't track your data.",
+  "mentalHealth": "Mental Health",
+  "substanceUse": "Substance Use",
+  "basicNeedsT": "Basic Needs (Shelter / Food)",
+  "mentalHealthTitle": "Mental Health Triage (PHQ-2)",
+  
+  "phq2": {
+    "disclaimerTitle": "Mental Health Check-In",
+    "disclaimerAlert": "Important Disclaimer",
+    "disclaimerText": "This is an <strong>anonymous screening tool</strong> based on the PHQ-2 questionnaire. It is not a diagnostic tool and should not replace professional medical advice.",
+    "disclaimerPoints": [
+      "Your responses are completely private and not stored",
+      "This tool is for educational and awareness purposes",
+      "If you're in crisis, please call 988 immediately",
+      "Always consult with healthcare providers for medical advice"
+    ],
+    "startButton": "I Understand - Begin Check-In",
+    "question1": "Over the past 2 weeks, how often have you been bothered by little interest or pleasure in doing things?",
+    "question2": "Over the past 2 weeks, how often have you been bothered by feeling down, depressed, or hopeless?",
+    "options": {
+      "notAtAll": "Not at all",
+      "severalDays": "Several days",
+      "moreThanHalf": "More than half the days",
+      "nearlyEveryDay": "Nearly every day"
+    },
+    "progress": "Question {current} of {total}",
+    "results": {
+      "talkNow": {
+        "title": "Talk Now - Immediate Support",
+        "description": "Your responses suggest you could benefit from speaking with someone right away. Please reach out to these confidential resources:",
+        "actions": [
+          "Call or text a crisis helpline",
+          "You are not alone – help is available 24/7",
+          "Consider reaching out to a trusted adult"
+        ],
+        "resources": [
+          "National Suicide Prevention Lifeline: 988",
+          "Crisis Text Line: Text HOME to 741741",
+          "The Doorway Nashua: (603) 881-8373"
+        ]
+      },
+      "next48h": {
+        "title": "Next 48 Hours - Professional Support",
+        "description": "Your responses indicate it would be helpful to connect with a mental health professional soon:",
+        "actions": [
+          "Schedule an appointment within the next 2 days",
+          "Reach out to local counseling services",
+          "Talk to a school counselor or healthcare provider"
+        ],
+        "resources": [
+          "The Youth Council: (603) 889-1090",
+          "Greater Nashua Mental Health: (603) 889-6147",
+          "School Counseling Services"
+        ]
+      },
+      "selfHelp": {
+        "title": "Self-Help & Wellness",
+        "description": "Your responses are in a range that many people experience. Here are resources to support your mental wellness:",
+        "actions": [
+          "Practice daily self-care strategies",
+          "Monitor your mood over the next 2 weeks",
+          "Build a support network with friends/family",
+          "Try mindfulness and relaxation techniques"
+        ],
+        "resources": [
+          "Local Support Groups",
+          "Online Mental Health Resources",
+          "Wellness Apps & Tools",
+          "Coping Strategies Guide"
+        ],
+        "copingStrategies": {
+          "title": "Immediate Coping Strategies",
+          "techniques": [
+            "Deep breathing: 4-7-8 technique (inhale 4s, hold 7s, exhale 8s)",
+            "5-4-3-2-1 grounding: Name 5 things you see, 4 things you feel, 3 things you hear, 2 things you smell, 1 thing you taste",
+            "Progressive muscle relaxation: Tense and release each muscle group",
+            "10-minute mindfulness meditation"
+          ]
+        },
+        "dailyPractices": {
+          "title": "Daily Wellness Practices",
+          "practices": [
+            "15 minutes of physical activity",
+            "Gratitude journaling - write 3 things you're thankful for",
+            "Connect with one supportive person",
+            "Get 7-9 hours of quality sleep"
+          ]
+        }
+      }
+    },
+    "immediateHelp": "🚨 Immediate Help Available",
+    "call988": "Call 988 Now",
+    "textHome": "Text HOME to 741741",
+    "recommendedSteps": "Recommended Next Steps:",
+    "resources": "Resources:",
+    "startNew": "Start New Check-In",
+    "backToResources": "Back to Resources"
+  },
+
+  "substanceUseIntro": "You can get help for substance use issues. Call 211 anytime to get connected, or view these local resources below.",
+  "call211": "Call 211",
+  "callSAMHSA": "Call SAMHSA (1‑800‑622‑HELP)",
+  "noResourcesFound": "No resources found.",
+  "availableBeds": "Available Beds",
+  "waitTime": "Wait Time",
+  "call": "Call",
+
+  "sms": {
+    "intro": "Hello, I was referred via NexusNH. I'm seeking help with",
+    "closing": "Please contact me.",
+    "instruction": "Click to text for intake",
+    "button": "Text for Intake",
+    "success": "SMS sent successfully!",
+    "error": "Failed to send SMS.",
+    "ariaLabel": "Send text for intake"
+  },
+  
+  "basicNeeds": {
+    "title": "Basic Needs Navigator",
+    "subtitle": "Find shelter, food, medical care, and other essential services in Nashua",
+    "crisisCheck": "Safety Check",
+    "identifyNeeds": "Your Needs",
+    "getHelp": "Resources",
+    "safetyFirst": "Safety First",
+    "crisisDisclaimer": "Please let us know if you're in immediate danger so we can help you get the right emergency services.",
+    "medicalEmergency": "I need immediate medical attention",
+    "call911Now": "Call 911 Now",
+    "feelUnsafe": "I feel unsafe where I am right now",
+    "freezingTemp": "It's below freezing and I need warm shelter",
+    "noFoodToday": "I haven't eaten today and need food",
+    "urgentHelp": "Urgent Help Available",
+    "callNashuaPolice": "Call Nashua Police Non-Emergency",
+    "whatDoYouNeed": "What do you need help with?",
+    "shelter": "Shelter & Housing",
+    "shelterDesc": "Emergency shelter, warming centers, housing assistance",
+    "food": "Food & Meals",
+    "foodDesc": "Food pantries, free meals, SNAP assistance",
+    "medical": "Medical Care",
+    "medicalDesc": "Clinics, urgent care, prescription help",
+    "hygiene": "Hygiene & Showers",
+    "hygieneDesc": "Showers, laundry, restrooms, personal care",
+    "resourcesForYou": "Resources Matching Your Needs",
+    "warmingCenterAlert": "Freezing Temperatures Expected",
+    "warmingCenterInfo": "Warming centers may be open. Check with shelters for availability.",
+    "emergencyFoodAlert": "Emergency Food Available",
+    "emergencyFoodInfo": "Many shelters and soup kitchens serve meals daily.",
+    "noResourcesMatch": "No resources match your current needs. Try adjusting your selections.",
+    "adjustNeeds": "Adjust Needs",
+    "transportationHelp": "Transportation Assistance",
+    "transportationInfo": "Need help getting to these locations? Nashua Transit System can help.",
+    "callNashuaTransit": "Call Transit",
+    "viewRoutes": "View Routes",
+    "startOver": "Start Over"
+  },
+  
+  "back": "Back",
+  "next": "Next"
+}

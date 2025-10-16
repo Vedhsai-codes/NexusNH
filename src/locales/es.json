@@ -1,0 +1,160 @@
+{
+  "welcome": "Bienvenido a NexusNH",
+  "subtitle": "Esta aplicación es anónima y no rastrea sus datos.",
+  "mentalHealth": "Salud Mental",
+  "substanceUse": "Uso de Sustancias",
+  "basicNeedsT": "Necesidades Básicas (Refugio / Comida)",
+  "mentalHealthTitle": "Evaluación de Salud Mental (PHQ-2)",
+  
+  "phq2": {
+    "disclaimerTitle": "Evaluación de Salud Mental",
+    "disclaimerAlert": "Descargo de Responsabilidad Importante",
+    "disclaimerText": "Esta es una <strong>herramienta de evaluación anónima</strong> basada en el cuestionario PHQ-2. No es una herramienta de diagnóstico y no debe reemplazar el consejo médico profesional.",
+    "disclaimerPoints": [
+      "Sus respuestas son completamente privadas y no se almacenan",
+      "Esta herramienta es con fines educativos y de concientización",
+      "Si está en crisis, llame al 988 inmediatamente",
+      "Siempre consulte con proveedores de atención médica para obtener asesoramiento médico"
+    ],
+    "startButton": "Entiendo - Comenzar Evaluación",
+    "question1": "Durante las últimas 2 semanas, ¿con qué frecuencia se ha sentido molestado por poco interés o placer en hacer las cosas?",
+    "question2": "Durante las últimas 2 semanas, ¿con qué frecuencia se ha sentido molestado por sentirse decaído, deprimido o sin esperanzas?",
+    "options": {
+      "notAtAll": "Nada en absoluto",
+      "severalDays": "Varios días",
+      "moreThanHalf": "Más de la mitad de los días",
+      "nearlyEveryDay": "Casi todos los días"
+    },
+    "progress": "Pregunta {current} de {total}",
+    "results": {
+      "talkNow": {
+        "title": "Hable Ahora - Apoyo Inmediato",
+        "description": "Sus respuestas sugieren que podría beneficiarse de hablar con alguien de inmediato. Comuníquese con estos recursos confidenciales:",
+        "actions": [
+          "Llame o envíe un mensaje de texto a una línea de crisis",
+          "No está solo: la ayuda está disponible 24/7",
+          "Considere comunicarse con un adulto de confianza"
+        ],
+        "resources": [
+          "Línea Nacional de Prevención del Suicidio: 988",
+          "Línea de Texto de Crisis: Envíe HOME al 741741",
+          "The Doorway Nashua: (603) 881-8373"
+        ]
+      },
+      "next48h": {
+        "title": "Próximas 48 Horas - Apoyo Profesional",
+        "description": "Sus respuestas indican que sería útil conectarse con un profesional de salud mental pronto:",
+        "actions": [
+          "Programe una cita dentro de los próximos 2 días",
+          "Comuníquese con servicios de consejería local",
+          "Hable con un consejero escolar o proveedor de atención médica"
+        ],
+        "resources": [
+          "The Youth Council: (603) 889-1090",
+          "Greater Nashua Mental Health: (603) 889-6147",
+          "Servicios de Consejería Escolar"
+        ]
+      },
+      "selfHelp": {
+        "title": "Autoayuda y Bienestar",
+        "description": "Sus respuestas están en un rango que muchas personas experimentan. Aquí hay recursos para apoyar su bienestar mental:",
+        "actions": [
+          "Practique estrategias de autocuidado diarias",
+          "Monitoree su estado de ánimo durante las próximas 2 semanas",
+          "Construya una red de apoyo con amigos/familia",
+          "Pruebe técnicas de mindfulness y relajación"
+        ],
+        "resources": [
+          "Grupos de Apoyo Local",
+          "Recursos de Salud Mental en Línea",
+          "Aplicaciones y Herramientas de Bienestar",
+          "Guía de Estrategias de Afrontamiento"
+        ],
+        "copingStrategies": {
+          "title": "Estrategias de Afrontamiento Inmediatas",
+          "techniques": [
+            "Respiración profunda: técnica 4-7-8 (inhalar 4s, mantener 7s, exhalar 8s)",
+            "Técnica 5-4-3-2-1: Nombra 5 cosas que ves, 4 que sientes, 3 que oyes, 2 que hueles, 1 que saboreas",
+            "Relajación muscular progresiva: Tensa y relaja cada grupo muscular",
+            "Meditación mindfulness de 10 minutos"
+          ]
+        },
+        "dailyPractices": {
+          "title": "Prácticas Diarias de Bienestar",
+          "practices": [
+            "15 minutos de actividad física",
+            "Diario de gratitud - escribe 3 cosas por las que estás agradecido",
+            "Conéctate con una persona de apoyo",
+            "Duerme 7-9 horas de calidad"
+          ]
+        }
+      }
+    },
+    "immediateHelp": "🚨 Ayuda Inmediata Disponible",
+    "call988": "Llamar al 988 Ahora",
+    "textHome": "Enviar HOME al 741741",
+    "recommendedSteps": "Próximos Pasos Recomendados:",
+    "resources": "Recursos:",
+    "startNew": "Comenzar Nueva Evaluación",
+    "backToResources": "Volver a Recursos"
+  },
+
+  "substanceUseIntro": "Puede obtener ayuda para problemas de uso de sustancias. Llame al 211 en cualquier momento para conectarse, o vea estos recursos locales a continuación.",
+  "call211": "Llamar al 211",
+  "callSAMHSA": "Llamar a SAMHSA (1‑800‑622‑AYUDA)",
+  "noResourcesFound": "No se encontraron recursos.",
+  "availableBeds": "Camas Disponibles",
+  "waitTime": "Tiempo de Espera",
+  "call": "Llamar",
+
+  "sms": {
+    "intro": "Hola, me refirieron a través de NexusNH. Estoy buscando ayuda con",
+    "closing": "Por favor contácteme.",
+    "instruction": "Haga clic para enviar mensaje de texto para admisión",
+    "button": "Enviar Mensaje para Admisión",
+    "success": "¡Mensaje de texto enviado con éxito!",
+    "error": "Error al enviar el mensaje de texto.",
+    "ariaLabel": "Enviar mensaje de texto para admisión"
+  },
+  
+  "basicNeeds": {
+    "title": "Navegador de Necesidades Básicas",
+    "subtitle": "Encuentre refugio, comida, atención médica y otros servicios esenciales en Nashua",
+    "crisisCheck": "Verificación de Seguridad",
+    "identifyNeeds": "Sus Necesidades",
+    "getHelp": "Recursos",
+    "safetyFirst": "Seguridad Primero",
+    "crisisDisclaimer": "Por favor infórmenos si está en peligro inmediato para que podamos ayudarle a obtener los servicios de emergencia adecuados.",
+    "medicalEmergency": "Necesito atención médica inmediata",
+    "call911Now": "Llamar al 911 Ahora",
+    "feelUnsafe": "Me siento inseguro donde estoy ahora mismo",
+    "freezingTemp": "Hace temperaturas bajo cero y necesito refugio cálido",
+    "noFoodToday": "No he comido hoy y necesito comida",
+    "urgentHelp": "Ayuda Urgente Disponible",
+    "callNashuaPolice": "Llamar a la Policía de Nashua No Emergencia",
+    "whatDoYouNeed": "¿Con qué necesita ayuda?",
+    "shelter": "Refugio y Vivienda",
+    "shelterDesc": "Refugio de emergencia, centros de calentamiento, asistencia de vivienda",
+    "food": "Comida y Comidas",
+    "foodDesc": "Despensas de comida, comidas gratuitas, asistencia SNAP",
+    "medical": "Atención Médica",
+    "medicalDesc": "Clínicas, atención urgente, ayuda con recetas",
+    "hygiene": "Higiene y Duchas",
+    "hygieneDesc": "Duchas, lavandería, baños, cuidado personal",
+    "resourcesForYou": "Recursos que Coinciden con Sus Necesidades",
+    "warmingCenterAlert": "Se Esperan Temperaturas Bajo Cero",
+    "warmingCenterInfo": "Los centros de calentamiento pueden estar abiertos. Consulte con los refugios sobre disponibilidad.",
+    "emergencyFoodAlert": "Comida de Emergencia Disponible",
+    "emergencyFoodInfo": "Muchos refugios y comedores populares sirven comidas diariamente.",
+    "noResourcesMatch": "No hay recursos que coincidan con sus necesidades actuales. Intente ajustar sus selecciones.",
+    "adjustNeeds": "Ajustar Necesidades",
+    "transportationHelp": "Asistencia de Transporte",
+    "transportationInfo": "¿Necesita ayuda para llegar a estos lugares? El Sistema de Tránsito de Nashua puede ayudar.",
+    "callNashuaTransit": "Llamar al Tránsito",
+    "viewRoutes": "Ver Rutas",
+    "startOver": "Comenzar de Nuevo"
+  },
+  
+  "back": "Atrás",
+  "next": "Siguiente"
+}
