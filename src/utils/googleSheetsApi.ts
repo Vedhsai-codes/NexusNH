@@ -124,6 +124,39 @@ const getMockResources = (): Resource[] => [
     notes: "Emergency shelter & meals. Bring ID if possible"
   },
   {
+    id: "StJosephSoupKitchen",
+    name: "St. Joseph Community Soup Kitchen",
+    type: "Food",
+    address: "77 Main St, Nashua, NH 03060",
+    phone: "(603) 595-2157",
+    hours: "Mon-Fri 11am-1pm",
+    status: "Open",
+    capacity: "100",
+    notes: "Hot meals, no requirements"
+  },
+  {
+    id: "SalvationArmyNashua",
+    name: "Salvation Army Nashua",
+    type: "Shelter+Food",
+    address: "1 Montgomery Ave, Nashua, NH 03060",
+    phone: "(603) 883-8411",
+    hours: "Mon-Fri 9am-4pm",
+    status: "Open",
+    capacity: "25",
+    notes: "Emergency shelter & food pantry"
+  },
+  {
+    id: "NHFoodBankNashua",
+    name: "NH Food Bank Nashua",
+    type: "Food",
+    address: "45 E Hollis St, Nashua, NH 03060",
+    phone: "(603) 669-9725",
+    hours: "Mon-Fri 8am-4pm",
+    status: "Open",
+    capacity: "",
+    notes: "Food distribution center"
+  },
+  {
     id: "HarborCare",
     name: "Harbor Care",
     type: "Shelter+Medical",
@@ -144,6 +177,17 @@ const getMockResources = (): Resource[] => [
     status: "Open",
     capacity: "",
     notes: "Substance use treatment & recovery services"
+  },
+  {
+    id: "NashuaPublicLibrary",
+    name: "Nashua Public Library",
+    type: "Hygiene+Documents",
+    address: "2 Court St, Nashua, NH 03060",
+    phone: "(603) 589-4600",
+    hours: "Mon-Thu 9am-9pm, Fri-Sat 9am-5pm",
+    status: "Open",
+    capacity: "",
+    notes: "Restrooms, computers, document help"
   }
 ];
 

@@ -37,11 +37,16 @@ const ResourceList: React.FC<Props> = ({ resources, filterType, onSelect, lang }
     if (sortKey === 'name') {
       return a.name.localeCompare(b.name);
     } else if (sortKey === 'availableBeds') {
-      const la = a.live?.availableBeds ?? 0;
-      const lb = b.live?.availableBeds ?? 0;
+      // Convert to numbers for arithmetic operation
+      const la = typeof a.liveStatus?.availableBeds === 'number' 
+        ? a.liveStatus.availableBeds 
+        : parseInt(a.liveStatus?.availableBeds as string) || 0;
+      const lb = typeof b.liveStatus?.availableBeds === 'number' 
+        ? b.liveStatus.availableBeds 
+        : parseInt(b.liveStatus?.availableBeds as string) || 0;
       return lb - la;
     } else {
-      return (a.live?.waitTime ?? '').localeCompare(b.live?.waitTime ?? '');
+      return (a.liveStatus?.waitTime ?? '').localeCompare(b.liveStatus?.waitTime ?? '');
     }
   });
 
@@ -71,7 +76,7 @@ const ResourceList: React.FC<Props> = ({ resources, filterType, onSelect, lang }
                 secondary={
                   <>
                     {r.status}
-                    {r.live && ` — Beds: ${r.live.availableBeds ?? 'N/A'}, Wait: ${r.live.waitTime ?? 'N/A'}`}
+                    {r.liveStatus && ` — Beds: ${r.liveStatus.availableBeds ?? 'N/A'}, Wait: ${r.liveStatus.waitTime ?? 'N/A'}`}
                   </>
                 }
               />

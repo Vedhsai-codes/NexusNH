@@ -92,29 +92,77 @@ const BasicNeedsScreen: React.FC<Props> = ({ lang }) => {
       console.error('Failed to load basic needs resources', err);
     }
   };
+const filterResources = () => {
+  const activeNeeds = Object.keys(userNeeds).filter(need => userNeeds[need as keyof UserNeeds]);
+  
+  if (activeNeeds.length === 0) {
+    setFilteredResources([]);
+    return;
+  }
 
-  const filterResources = () => {
-    const activeNeeds = Object.keys(userNeeds).filter(need => userNeeds[need as keyof UserNeeds]);
+  const filtered = resources.filter(resource => {
+    const resourceType = resource.type.toLowerCase();
     
-    if (activeNeeds.length === 0) {
-      setFilteredResources([]);
-      return;
-    }
+    // Check each need with more flexible matching
+    if (userNeeds.shelter && (
+      resourceType.includes('shelter') || 
+      resourceType.includes('housing')
+    )) return true;
+    
+    if (userNeeds.food && (
+      resourceType.includes('food') || 
+      resourceType.includes('meal') ||
+      resourceType.includes('soup kitchen') ||
+      resourceType.includes('pantry')
+    )) return true;
+    
+    if (userNeeds.medical && (
+      resourceType.includes('medical') || 
+      resourceType.includes('health') ||
+      resourceType.includes('clinic') ||
+      resourceType.includes('hospital')
+    )) return true;
+    
+    if (userNeeds.hygiene && (
+      resourceType.includes('hygiene') || 
+      resourceType.includes('shower') ||
+      resourceType.includes('restroom') ||
+      resourceType.includes('bathroom')
+    )) return true;
+    
+    if (userNeeds.documents && (
+      resourceType.includes('document') || 
+      resourceType.includes('id') ||
+      resourceType.includes('paperwork')
+    )) return true;
+    
+    return false;
+  });
 
-    const filtered = resources.filter(resource => {
-      const resourceType = resource.type.toLowerCase();
-      
-      if (userNeeds.shelter && resourceType.includes('shelter')) return true;
-      if (userNeeds.food && (resourceType.includes('food') || resourceType.includes('meal'))) return true;
-      if (userNeeds.medical && resourceType.includes('medical')) return true;
-      if (userNeeds.hygiene && resourceType.includes('hygiene')) return true;
-      if (userNeeds.documents && resourceType.includes('document')) return true;
-      
-      return false;
-    });
+  setFilteredResources(filtered);
+};
+  // const filterResources = () => {
+  //   const activeNeeds = Object.keys(userNeeds).filter(need => userNeeds[need as keyof UserNeeds]);
+    
+  //   if (activeNeeds.length === 0) {
+  //     setFilteredResources([]);
+  //     return;
+  //   }
 
-    setFilteredResources(filtered);
-  };
+  //   const filtered = resources.filter(resource => {
+  //     const resourceType = resource.type.toLowerCase();
+      
+  //     if (userNeeds.shelter && resourceType.includes('shelter')) return true;
+  //     if (userNeeds.food && (resourceType.includes('food') || resourceType.includes('meal'))) return true;
+  //     if (userNeeds.medical && resourceType.includes('medical')) return true;
+  //     if (userNeeds.hygiene && resourceType.includes('hygiene')) return true;
+  //     if (userNeeds.documents && resourceType.includes('document')) return true;
+      
+  //     return false;
+  //   });
+
+  //   setFilteredResources(filtered);
+  // };
 
   const handleNeedChange = (need: keyof UserNeeds) => (event: React.ChangeEvent<HTMLInputElement>) => {
     setUserNeeds(prev => ({

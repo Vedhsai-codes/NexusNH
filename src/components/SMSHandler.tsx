@@ -5,8 +5,9 @@ import { useTranslation } from 'react-i18next';
 
 interface Props {
   serviceType: string;
-  phoneNumber?: string; // optional override
-  onSuccess?: () => void; // optional callback
+  phoneNumber?: string; 
+  lang?: 'en' | 'es'; 
+  onSuccess?: () => void; 
 }
 
 const SMSHandler: React.FC<Props> = ({ serviceType, phoneNumber = '741741', onSuccess }) => {

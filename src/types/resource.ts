@@ -48,7 +48,7 @@ export interface LiveStatus {
 }
 
 export interface ResourceWithLive extends Resource {
-  liveStatus?: LiveStatus;
+  live?: LiveStatus;  //liveStatus?: LiveStatus;
 }
 
 // Alias for compatibility with existing code

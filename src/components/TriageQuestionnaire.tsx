@@ -35,12 +35,12 @@ const TriageQuestionnaire: React.FC<Props> = ({ onComplete }) => {
   const [answers, setAnswers] = useState<{ [key: number]: number }>({});
   const [showDisclaimer, setShowDisclaimer] = useState(true);
 
-  // Safe translation helper that always returns string[]
+  
   const getTranslatedArray = (key: string): string[] => {
     try {
       const result = t(key, { returnObjects: true });
       if (Array.isArray(result)) {
-        return result.map(item => String(item)); // Convert all items to strings
+        return result.map(item => String(item)); 
       }
       return [];
     } catch (error) {
