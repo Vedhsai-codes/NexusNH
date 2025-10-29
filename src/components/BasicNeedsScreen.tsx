@@ -537,6 +537,11 @@ const filterResources = () => {
                           🕒 {resource.hours}
                         </Typography>
                       )}
+                      {resource.capacity &&(
+                      <Typography variant="body2" display="block">
+                                🛏️ {resource.capacity}
+                      </Typography>
+                      )}
                       {resource.notes && (
                         <Typography variant="body2" display="block" fontStyle="italic">
                           💡 {resource.notes}

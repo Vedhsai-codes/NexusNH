@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { fetchAllResources } from '../utils/googleSheetsApi';
  // assume you already have this
 import { ResourceWithLive } from '../types/resource';
+import { fetchResourcesWithLive } from '../utils/googleSheetsApi';
 //import { Resource, LiveStatus } from '../types/resource';   // your types
 import SMSHandler from './SMSHandler';
 
@@ -22,13 +23,19 @@ const SubstanceUseScreen: React.FC<Props> = ({ lang }) => {
   //const [resources, setResources] = useState<CombinedResource[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+useEffect(() => {
     async function load() {
       try {
-        const allResources = await fetchAllResources();
-  // you should filter type = “Substance Use”
-        // Optionally fetch live status as well and merge
-        const filtered = allResources.filter(r => r.type.toLowerCase().includes('substance'));
+        // Use fetchResourcesWithLive instead of fetchAllResources
+        const allResourcesWithLive = await fetchResourcesWithLive();
+        console.log('All resources with live data:', allResourcesWithLive); // Debug
+        
+        // Filter for substance use resources
+        const filtered = allResourcesWithLive.filter(r => 
+          r.type.toLowerCase().includes('substance')
+        );
+        console.log('Filtered substance use resources:', filtered); // Debug
+        
         setResources(filtered);
       } catch (err) {
         console.error('Failed to load substance use resources', err);
@@ -84,11 +91,17 @@ const SubstanceUseScreen: React.FC<Props> = ({ lang }) => {
                     <>
                       {res.address} <br />
                       {res.phone} <br />
+                      
+                      {res.capacity &&(
+                                            <Typography variant="body2" display="block">
+                                                      🛏️ {res.capacity}
+                                            </Typography>
+                                            )}
                       {res.notes && <span>{res.notes}</span>} <br />
-                      {res.liveStatus && (
+                      {res.live && (
                         <span>
-                          {t('availableBeds')}: {res.liveStatus.availableBeds} •
-                          {t('waitTime')}: {res.liveStatus.waitTime}
+                          {t('availableBeds')}: {res.live.availableBeds} •
+                          {t('waitTime')}: {res.live.waitTime}
                         </span>
                       )}
                     </>

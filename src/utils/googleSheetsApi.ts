@@ -120,7 +120,7 @@ const getMockResources = (): Resource[] => [
     phone: "(603) 889-7770",
     hours: "24/7",
     status: "Open",
-    capacity: "45",
+    capacity: "Beds Available : 45",
     notes: "Emergency shelter & meals. Bring ID if possible"
   },
   {
@@ -131,7 +131,7 @@ const getMockResources = (): Resource[] => [
     phone: "(603) 595-2157",
     hours: "Mon-Fri 11am-1pm",
     status: "Open",
-    capacity: "100",
+    capacity: "Beds Available: 100",
     notes: "Hot meals, no requirements"
   },
   {
@@ -142,7 +142,7 @@ const getMockResources = (): Resource[] => [
     phone: "(603) 883-8411",
     hours: "Mon-Fri 9am-4pm",
     status: "Open",
-    capacity: "25",
+    capacity: "Beds Available: 0",
     notes: "Emergency shelter & food pantry"
   },
   {
@@ -153,7 +153,7 @@ const getMockResources = (): Resource[] => [
     phone: "(603) 669-9725",
     hours: "Mon-Fri 8am-4pm",
     status: "Open",
-    capacity: "",
+    capacity: "Beds Available : 2",
     notes: "Food distribution center"
   },
   {
@@ -164,7 +164,7 @@ const getMockResources = (): Resource[] => [
     phone: "(603) 882-3616",
     hours: "Mon-Fri 8am-5pm",
     status: "Open",
-    capacity: "32",
+    capacity: "Beds Available : 32",
     notes: "Integrated healthcare & housing services"
   },
   {
@@ -175,7 +175,7 @@ const getMockResources = (): Resource[] => [
     phone: "(603) 881-8373",
     hours: "24/7 Hotline",
     status: "Open",
-    capacity: "",
+    capacity: "Beds Available : 5",
     notes: "Substance use treatment & recovery services"
   },
   {
